@@ -1,0 +1,86 @@
+<!-- faq.component.html -->
+ <app-navbar></app-navbar>
+<div class="faq">
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+        
+        <div class="faq-item" *ngFor="let faq of faqs">
+          <div class="faq-question" (click)="toggleAnswer(faq)">
+            <h2>{{ faq.question }}</h2>
+            <span>{{ faq.isOpen ? '-' : '+' }}</span>
+          </div>
+          <div *ngIf="faq.isOpen" class="faq-answer">
+            <p>{{ faq.answer }}</p>
+          </div>
+        </div>
+      </div>
+      
+    
+    
+    
+    
+    
+    
+    <div class="accordion" id="accordionCakes">
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingChocolate">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChocolate" aria-expanded="true" aria-controls="collapseChocolate">
+                  Chocolate Cake
+              </button>
+          </h2>
+          <div id="collapseChocolate" class="accordion-collapse collapse show" aria-labelledby="headingChocolate" data-bs-parent="#accordionCakes">
+              <div class="accordion-body">
+                  <strong>Chocolate Cake</strong> is one of the most popular cakes worldwide. It's made with rich cocoa and dark chocolate, creating a moist and flavorful dessert. Common variations include adding chocolate ganache, frosting, and even layers of chocolate mousse.
+              </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingVanilla">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVanilla" aria-expanded="false" aria-controls="collapseVanilla">
+                  Vanilla Cake
+              </button>
+          </h2>
+          <div id="collapseVanilla" class="accordion-collapse collapse" aria-labelledby="headingVanilla" data-bs-parent="#accordionCakes">
+              <div class="accordion-body">
+                  <strong>Vanilla Cake</strong> is a timeless classic. It features a light, fluffy texture with a delicate vanilla flavor. Often topped with buttercream frosting, vanilla cake is perfect for almost any occasion, from birthdays to weddings.
+              </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingRedVelvet">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRedVelvet" aria-expanded="false" aria-controls="collapseRedVelvet">
+                  Red Velvet Cake
+              </button>
+          </h2>
+          <div id="collapseRedVelvet" class="accordion-collapse collapse" aria-labelledby="headingRedVelvet" data-bs-parent="#accordionCakes">
+              <div class="accordion-body">
+                  <strong>Red Velvet Cake</strong> is a unique cake with a deep red color and a subtle chocolate flavor. Traditionally paired with cream cheese frosting, it’s a beautiful cake often served at special events like Valentine's Day or anniversaries.
+              </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingCarrot">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCarrot" aria-expanded="false" aria-controls="collapseCarrot">
+                  Carrot Cake
+              </button>
+          </h2>
+          <div id="collapseCarrot" class="accordion-collapse collapse" aria-labelledby="headingCarrot" data-bs-parent="#accordionCakes">
+              <div class="accordion-body">
+                  <strong>Carrot Cake</strong> is a spiced cake with grated carrots added to the batter. Often combined with cinnamon and walnuts, it’s traditionally topped with cream cheese frosting, giving it a rich flavor and moist texture.
+              </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingCheesecake">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCheesecake" aria-expanded="false" aria-controls="collapseCheesecake">
+                  Cheesecake
+              </button>
+          </h2>
+          <div id="collapseCheesecake" class="accordion-collapse collapse" aria-labelledby="headingCheesecake" data-bs-parent="#accordionCakes">
+              <div class="accordion-body">
+                  <strong>Cheesecake</strong> is a decadent dessert made from cream cheese, sugar, and eggs, often with a buttery graham cracker crust. It's incredibly versatile, with various flavor options such as strawberry, blueberry, and chocolate.
+              </div>
+          </div>
+      </div>
+    </div>
+</div>

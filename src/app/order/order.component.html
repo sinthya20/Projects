@@ -1,0 +1,44 @@
+<!-- order.component.html -->
+<app-navbar></app-navbar>
+
+<div class="order">
+  <div class="order-container">
+    <h2>Ordernow</h2>
+  
+    <form (ngSubmit)="onSubmit()" #orderForm="ngForm">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" ngModel required placeholder="Enter your full name" />
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" ngModel required placeholder="Enter your email address" />
+      </div>
+  
+      <div class="form-group">
+        <label for="product">Product Selection</label>
+        <select id="product" name="product" ngModel required>
+          <option value="">Choose a product</option>
+          <option value="Cake">Cake</option>
+          <option value="Cupcakes">Cupcakes</option>
+          <option value="Pastries">Pastries</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="deliveryDate">Preferred Delivery Date</label>
+        <input type="date" id="deliveryDate" name="deliveryDate" ngModel required />
+      </div>
+  
+      <div class="form-group">
+        <label for="address">Delivery Address</label>
+        <textarea id="address" name="address" ngModel required placeholder="Enter your delivery address"></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" [disabled]="!orderForm.valid">Submit Order</button>
+      </div>
+    </form>
+  </div>
+</div>
+  <app-footer></app-footer>

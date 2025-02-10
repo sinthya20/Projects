@@ -1,0 +1,80 @@
+/* profile.component.css */
+.auth
+{
+
+  background-color: #f6d1d4;
+  padding: 10px 0;
+}
+.auth-container {
+  max-width: 400px;
+  margin-top: 30px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #e1999f;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.auth-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.auth-container button {
+  padding: 10px;
+  background-color: #FF6347;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+ 
+}
+.auth-container .sign{
+  margin-left: 50px;
+
+}
+
+.auth-container button:hover {
+  background-color: #E5533D;
+}
+
+.auth-container .google-sign-in {
+  background-color: #4285F4;
+  color: white;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 90px;
+}
+
+.auth-container .google-sign-in:hover {
+  background-color: #357AE8;
+  
+}
+
+.auth-container button {
+  margin-top: 10px;
+}
+.auth-container .log{
+  margin-left: 95px;
+}
+.auth-container .log1{
+  margin-left: 105px;
+}

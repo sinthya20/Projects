@@ -1,0 +1,42 @@
+<!-- profile.component.html -->
+<app-navbar></app-navbar>
+<div class="auth">
+  <div class="auth-container">
+    <!-- Sign Up Form -->
+    <div *ngIf="showSignUp">
+      <h2>Sign Up</h2>
+      <form (submit)="signUp()">
+        <input type="email" placeholder="Enter your email" [(ngModel)]="email" name="email" required>
+        <input type="password" placeholder="Enter your password" [(ngModel)]="password" name="password" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <button class="sign"  (click)="toggleForms()">Already have an account? Sign In</button>
+    </div>
+  
+    <!-- Sign In Form -->
+    <div *ngIf="!showSignUp">
+      <h2>Sign In</h2>
+      <form (submit)="signIn()">
+        <input type="email" placeholder="Enter your email" [(ngModel)]="email" name="email" required>
+        <input type="password" placeholder="Enter your password" [(ngModel)]="password" name="password" required>
+        <button  type="submit">Sign In</button>
+      </form>
+      <button class="sign"  (click)="toggleForms()">Don't have an account? Sign Up</button>
+      <button class="log"  (click)="forgotPassword()">Forgot Password?</button>
+    </div>
+  
+    <!-- Forgot Password Form -->
+    <div *ngIf="showForgotPassword">
+      <h2>Forgot Password</h2>
+      <form (submit)="resetPassword()">
+        <input type="email" placeholder="Enter your email" [(ngModel)]="email" name="email" required>
+        <button type="submit">Reset Password</button>
+      </form>
+      <button class="log1"  (click)="toggleForgotPassword()">Back to Sign In</button>
+    </div>
+  
+    <!-- Sign In with Google Button -->
+    <button class="google-sign-in" (click)="signInWithGoogle()">Sign in with Google</button>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,18 @@
+.card{
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-left: 1px;
+    display: flex;
+    padding: 5px;
+   justify-content: center;
+   align-content: center;
+}
+.card h1{
+    font-size: medium;
+    padding-left: 40px;
+   justify-content: center center;
+}
+.card p
+{
+    padding-left: 50px;
+}

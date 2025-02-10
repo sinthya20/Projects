@@ -1,0 +1,82 @@
+/* Full width navbar with chocolate background */
+.navbar {
+    background-color: #3E1C18; /* Chocolate color */
+    width: 100%;
+    padding: 0; /* Remove any default padding */
+  }
+  
+  .navbar .navbar-brand {
+    color: #fff !important; /* White text for brand */
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    padding-left: 15px; /* Add padding to the left for the brand */
+    font-family: cursive;
+  }
+  
+  .navbar .navbar-toggler {
+    border-color: #fff !important; /* White border for toggler */
+  }
+  
+  .navbar .navbar-toggler-icon {
+    background-color: #fff !important; /* White toggler icon */
+  }
+  
+  /* Styling for nav links */
+  .navbar .nav-link {
+    color: #fff !important; /* White text for nav links */
+    font-weight: 200;
+    font-size: 1.0rem;
+    padding: 12px 20px; /* Adequate padding */
+    text-transform: uppercase; /* Uppercase text for links */
+    letter-spacing: 0.5px; /* Slight letter spacing */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  /* Hover effect on links */
+  .navbar .nav-link:hover {
+    color: #F5D0A9 !important; /* Light cream color on hover */
+    text-decoration: none; /* No underline on hover */
+    transform: scale(1.05); /* Slight scale effect for hover */
+  }
+  
+  /* Container for full-width, chocolate background */
+  .container-fluid {
+    background-color: #3E1C18; /* Chocolate color */
+    color: white; /* White text inside the container */
+    width: 100%;
+    margin: 1px;
+  }
+  
+  /* Offcanvas menu styling */
+  .offcanvas-header {
+    background-color: #3E1C18; /* Matching chocolate color */
+    color: #fff; /* White text */
+  }
+  
+  .offcanvas-body {
+    background-color: #3E1C18; /* Matching chocolate color */
+    color: #fff; /* White text */
+  }
+  
+  .offcanvas .nav-link {
+    font-size: 1.0rem;
+    padding: 10px 20px;
+    color: #fff;
+  }
+  
+  .offcanvas .nav-link:hover {
+    color: #F5D0A9 !important; /* Hover effect for offcanvas links */
+  }
+  
+  /* Adjust the width of the offcanvas on smaller screens */
+  .offcanvas-end {
+    max-width: 1000px; /* Slightly wider offcanvas */
+  }
+  
+  @media (max-width: 991px) {
+    .navbar .container-fluid {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  

@@ -1,0 +1,83 @@
+/* Footer Styling with White and Gray Theme */
+.footer {
+    background-color: #f3d0cf; /* White for background */
+    color: #6C6C6C; /* Medium Gray for text */
+    padding:  0;
+    margin: 2PX;
+}
+
+.footer-heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #3E3E3E; /* Dark Gray for headings */
+    margin-bottom: 15px;
+}
+
+.footer-social {
+    border-bottom: 1px solid #000000; /* Silver border */
+    padding-bottom: 20px;
+}
+.footer-social-icons{
+    color: #000000;
+}
+
+.footer-social-icons a {
+    color: #060404; /* Medium Gray for icons */
+    font-size: 1.6rem;
+    margin-right: 20px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-social-icons a:hover {
+    color: #3E3E3E; /* Dark Gray for hover */
+    transform: scale(1.1);
+}
+
+.footer-links {
+    padding-top: 30px;
+}
+
+.footer-links p {
+    font-size: 1rem;
+    color: #6C6C6C; /* Medium Gray for text */
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #6C6C6C; /* Medium Gray for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #3E3E3E; /* Dark Gray for hover */
+}
+
+.footer-bottom {
+    background-color: #F5F5F5; /* Light Gray for footer bottom */
+    color: #6C6C6C;
+    padding: 15px 0;
+}
+
+.footer-bottom a {
+    color: #6C6C6C;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #3E3E3E; /* Dark Gray for hover */
+}
+
+@media (max-width: 768px) {
+    .footer-social {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-links {
+        padding-top: 10px;
+    }
+}
+.me-5 span{
+    color: #060404;
+}

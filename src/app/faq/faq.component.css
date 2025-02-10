@@ -1,0 +1,132 @@
+.accordion{
+    max-width: 90%;
+   margin: 0;
+  text-align: center;
+  align-items: center;
+  margin-left: 70px;
+  margin-top: 5px;
+}
+/* Custom Accordion Styling */
+.accordion-button {
+  background-color: #6f4f1f; /* Chocolate color */
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 15px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.accordion-button:hover {
+  background-color: #3e2b1f; /* Darker chocolate on hover */
+  transform: scale(1.05);
+}
+
+.accordion-button.collapsed {
+  background-color: #8b5e3c; /* Lighter chocolate for collapsed state */
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  background-color: #f5f1e1; /* Light cream background for body */
+  color: #4e3629; /* Dark chocolate text */
+  font-size: 1rem;
+  padding: 25px;
+  border-radius: 10px;
+  line-height: 1.6;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.accordion-header {
+  border-bottom: 2px solid #c99f7d; /* Soft chocolate color for border */
+}
+
+.accordion-item:nth-child(odd) .accordion-button {
+  background-color: #7a4b2a; /* Darker chocolate for odd items */
+}
+
+.accordion-item:nth-child(even) .accordion-button {
+  background-color: #9e6a47; /* Slightly lighter chocolate for even items */
+}
+
+.accordion-item:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-body strong {
+  font-size: 1.1rem;
+  color: #3e2b1f; /* Darker chocolate for strong text */
+}
+
+
+
+
+
+
+/* faq.component.css */
+.faq-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #e1999f;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 30px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #7a4b2a;
+  color: white;
+}
+
+.faq-question h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.faq-question span {
+  font-size: 1.5rem;
+}
+
+.faq-answer {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-top: 10px;
+  border-left: 3px solid #7a4b2a;
+  border-radius: 6px;
+}
+.faq{
+  background-color: #f6d1d4;
+  padding: 10px 0;
+}
